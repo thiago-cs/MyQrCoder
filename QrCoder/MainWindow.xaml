@@ -10,7 +10,7 @@
 		<sys:Double x:Key="Scale when pressed" >0.9</sys:Double>
 		<BackEase x:Key="Easing function" Amplitude="0.3" EasingMode="EaseOut" />
 	</Window.Resources>
-
+	
 	<DockPanel>
 		<DockPanel DockPanel.Dock="Top" Background="LightGray" >
 			<Button DockPanel.Dock="Right" Margin="5" VerticalAlignment="Center" ClickMode="Release" Click="PasteButton_Click" >
