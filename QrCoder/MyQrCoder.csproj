@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>resources\app-icon.ico</ApplicationIcon>
+    <Authors>Thiago Siqueira</Authors>
+    <Version>0.1.0</Version>
+    <Description>A simple text to QR code utility.</Description>
+    <StartupObject>QrCoder.App</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="resources\iconfinder_29-qr_code_6498744.svg" />
+    <None Remove="resources\paste48.png" />
+    <None Remove="window-icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="QRCoder" Version="1.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="resources\paste48.png" />
+    <Resource Include="window-icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
