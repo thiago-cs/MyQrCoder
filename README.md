@@ -1,5 +1,5 @@
 # MyQrCoder
-This software generates a QR code from an text input. That is very useful to quickly transfer text data to a mobile phone.
+This software generates a QR code from a text input. That is very useful for quickly sharing text data with a mobile phone.
 
 #### For iPhone users:
 This software provides a great experience when used together with this QR code reader iOS Shortcut I built: https://www.icloud.com/shortcuts/c8dfbfe16e284ab686f9ad7c0c5ecfd4
