@@ -2,13 +2,14 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>resources\app-icon.ico</ApplicationIcon>
     <Authors>Thiago Siqueira</Authors>
     <Version>0.1.0</Version>
     <Description>A simple text to QR code utility.</Description>
     <StartupObject>QrCoder.App</StartupObject>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
